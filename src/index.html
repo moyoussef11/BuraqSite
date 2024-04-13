@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Start first header and hero  -->
+    <div class="relative">
+      <div
+        style="background-image: url('./assets/Path\ 187.png')"
+        class="bg-no-repeat absolute left-0 right-0 top-0 bottom-0 -z-10 bg-cover"
+      ></div>
+      <!-- Start header -->
+      <header class="w-full">
+        <nav class="px-4 lg:px-6 py-2.5 mainColor">
+          <div
+            class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+          >
+            <a href="#" class="flex items-center">
+              <img
+                src="./assets/Buraq-logo 1.png"
+                class="mr-3 h-6 sm:h-9"
+                alt="Logo"
+              />
+            </a>
+            <div class="flex items-center lg:order-2 lg:space-x-5">
+              <a href="#" class="btn bg-[#153A74] px-7">Log in</a>
+              <a
+                href="#"
+                class="btn border border-[#153A74] text-[#153A74] hover:text-white hover:border-[#6FDCB6]"
+                >sign up</a
+              >
+              <button
+                data-collapse-toggle="mobile-menu-2"
+                type="button"
+                class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="mobile-menu-2"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <svg
+                  class="hidden w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+              id="mobile-menu-2"
+            >
+              <ul
+                class="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0 font-bold capitalize"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pr-4 pl-3 hover:text-white"
+                    aria-current="page"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block py-2 pr-4 pl-3 hover:text-white"
+                    >Shipping services</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block py-2 pr-4 pl-3 hover:text-white"
+                    >track order</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block py-2 pr-4 pl-3 hover:text-white"
+                    >contact us</a
+                  >
+                </li>
+                <li>
+                  <div class="dropdown inline-block relative">
+                    <button
+                      class="text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center"
+                    >
+                      <span class="mr-1">More Options</span>
+                      <svg
+                        class="fill-current h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        />
+                      </svg>
+                    </button>
+                    <ul
+                      class="dropdown-menu absolute hidden text-gray-700 pt-1 w-full"
+                    >
+                      <li>
+                        <a
+                          class="rounded-t py-2 px-4 block whitespace-no-wrap"
+                          href="#"
+                          >One</a
+                        >
+                      </li>
+                      <li>
+                        <a class="py-2 px-4 block whitespace-no-wrap" href="#"
+                          >Two</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- End header header -->
+      <!-- Start hero section -->
+      <div
+        class="hero w-full padding flex items-center flex-col justify-center text-center md:flex-row md:text-start"
+      >
+        <div class="w-full md:w-1/2 flex flex-col md:space-y-5">
+          <h2 class="font-bold capitalize mainColor text-5xl">
+            Shipping<br />
+            Made Easy
+          </h2>
+          <p class="mainColor font-semibold">
+            Discover Buraq's comprehensive range of <br />
+            services tailored for your shipping needs.
+          </p>
+          <div class="flex flex-col sm:flex-row mx-auto my-2 md:mx-0">
+            <button><img src="./assets/icon-2.png" alt="app store" /></button>
+            <button><img src="./assets/icon-1.png" alt="google play" /></button>
+          </div>
+        </div>
+        <div class="w-full h-full md:w-1/2">
+          <img
+            class="w-full h-full object-cover"
+            src="./assets/mix_concepts_7.png"
+            alt="concepts"
+          />
+        </div>
+      </div>
+      <!-- End hero section -->
+    </div>
+    <!-- End first header and hero  -->
+    <!-- Start Section Two -->
+    <section class="secTwo relative">
+      <div
+        class="mainColor padding flex items-center flex-col-reverse md:flex-row"
+      >
+        <div class="w-full md:w-1/2 capitalize text-center md:text-start">
+          <h3 class="text-4xl font-bold mb-2">
+            Discover Our Container Shipping <br />
+            Services for Your International Cargo
+          </h3>
+          <p class="font-medium mb-3">
+            At Buraq, we offer a range of container shipping services to meet
+            your international cargo needs. Whether you're shipping small
+            packages or large shipments, we have the right container options for
+            you.
+          </p>
+          <div
+            class="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-2"
+          >
+            <div class="bg-white w-full md:w-1/2 px-3 py-4">
+              <h5 class="text-[#4894EA] font-bold mb-2">Types Available</h5>
+              <p>
+                Choose from a variety of container types, including standard,
+                refrigerated, and open-top containers.
+              </p>
+            </div>
+            <div class="bg-white w-full md:w-1/2 px-3 py-4">
+              <h5 class="text-[#4894EA] font-bold mb-2">Suitable Goods</h5>
+              <p>
+                Our container shipping services are ideal for transporting goods
+                of all kinds.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 md:-mt-[370px]">
+          <img class="w-full h-full" src="./assets/023.png" alt="pic" />
+        </div>
+      </div>
+      <div
+        style="background-image: url('./assets/Path\ 186.png')"
+        class="bg-no-repeat -z-10 hidden md:block absolute left-0 top-52 lg:left-[320px] lg:top-[420px] w-full h-full"
+      ></div>
+      <div class="px-5 py-0 lg:px-[200px] flex flex-col">
+        <div class="mainColor flex items-center flex-col md:flex-row">
+          <div class="w-full md:w-1/2">
+            <img class="w-full h-full" src="./assets/84547.png" alt="phone" />
+          </div>
+          <div class="w-full md:w-1/2 capitalize text-center md:text-start">
+            <h3 class="text-4xl font-bold mb-2">
+              Efficient Collection Shipping:<br />
+              Consolidating Shipments from Multiple Collection Points
+            </h3>
+            <p class="font-medium mb-3">
+              Buraq's Collection Shipping service is designed to handle multiple
+              collection points and consolidate shipments, ensuring efficient
+              and cost-effective international shipping solutions.
+            </p>
+          </div>
+        </div>
+        <div
+          class="mainColor flex flex-col md:flex-row md:items-center justify-between text-sm"
+        >
+          <div>
+            <i class="fa-solid fa-cube text-[#6FDCB6]"></i
+            ><span class="ml-2"
+              >Efficient and cost-effective international shipping solutions
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-cube text-[#6FDCB6]"></i
+            ><span class="ml-2"
+              >Consolidation of shipments for optimized shipping
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-cube text-[#6FDCB6]"></i
+            ><span class="ml-2"
+              >Streamlined collection from various locations
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mainColor padding flex items-center flex-col-reverse md:flex-row"
+      >
+        <div class="w-full md:w-1/2 capitalize text-center md:text-start">
+          <h3 class="text-4xl font-bold mb-2">
+            Simplify Your Shipping Process <br />
+            with One Time Shipping Services
+          </h3>
+          <p class="font-medium mb-3">
+            Our One Time Shipping services are designed to provide a simple and
+            convenient solution for customers with a one-off shipping need.
+            Whether you need to send a package or transport goods, we have you
+            covered.
+          </p>
+          <div
+            class="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-2"
+          >
+            <div class="bg-white w-full md:w-1/2 px-3 py-4">
+              <i class="fa-solid fa-cube text-[#0E72E5] text-3xl"></i>
+              <h5 class="mainColor font-bold mb-2">Convenience</h5>
+              <p>
+                Enjoy the convenience of our One Time Shipping services,
+                tailored to your specific needs.
+              </p>
+            </div>
+            <div class="bg-white w-full md:w-1/2 px-3 py-4">
+              <i class="fa-solid fa-cube text-[#0E72E5] text-3xl"></i>
+              <h5 class="mainColor font-bold mb-2">Efficiency</h5>
+              <p>
+                Experience efficient and reliable shipping with our One Time
+                Shipping services.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <img class="w-full h-full" src="./assets/camion2.png" alt="camion" />
+        </div>
+      </div>
+    </section>
+    <!-- End Section Two -->
+    <!-- Start Section Three -->
+    <section
+      style="background-image: url('./assets/Path\ 234.png')"
+      class="secThree lg:-mt-44 bg-no-repeat bg-cover"
+    >
+      <div class="px-5 py-10 md:p-[100px]">
+        <div
+          class="mainColor padding flex items-center flex-col-reverse md:flex-row"
+        >
+          <div class="w-full md:w-1/2 capitalize text-center md:text-start">
+            <h3 class="text-4xl font-bold mb-2">
+              Book Your Shipping Services with Ease
+            </h3>
+            <p class="font-medium mb-3">
+              At Buraq, we make booking your shipping services a breeze. Our
+              simple and user-friendly process ensures that you can easily
+              navigate through each step, from initial contact to delivery. With
+              our efficient system, you can have peace of mind knowing that your
+              cargo will be handled with care and delivered on time.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2">
+            <img
+              class="w-full h-full"
+              src="./assets/Shopping_Concepts_33.png"
+              alt="shopping"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Three -->
+    <!-- Start Section Four -->
+    <section
+      style="background-color: #f6f6f6"
+      id="testimonial-area"
+      class="padding"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div style="color: #153a74" class="section-heading text-center">
+              <h2 class="fw-bold">Happy Customers</h2>
+              <p>Read what our customers have to say about our services</p>
+            </div>
+          </div>
+        </div>
+        <div class="testi-wrap">
+          <div
+            class="client-single active position-1"
+            data-position="position-1"
+          >
+            <div style="color: gold" class="stars mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="client-img">
+              <img src="assets/avatar-01.png" alt="avatar" />
+            </div>
+            <div class="client-comment">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h3>
+              <span><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="client-info">
+              <h3>Rimy Nail</h3>
+              <p><a href="#">creative inc</a></p>
+            </div>
+          </div>
+          <div
+            class="client-single inactive position-2"
+            data-position="position-2"
+          >
+            <div style="color: gold" class="stars mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="client-img">
+              <img src="assets/avatar-02.png" alt="avatar" />
+            </div>
+            <div class="client-comment">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h3>
+              <span><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="client-info">
+              <h3>Rimy Nail</h3>
+              <p><a href="#">creative inc</a></p>
+            </div>
+          </div>
+          <div
+            class="client-single inactive position-3"
+            data-position="position-3"
+          >
+            <div style="color: gold" class="stars mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="client-img">
+              <img src="assets/avatar-01.png" alt="avatar" />
+            </div>
+            <div class="client-comment">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h3>
+              <span><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="client-info">
+              <h3>Rimy Nail</h3>
+              <p><a href="#">creative inc</a></p>
+            </div>
+          </div>
+          <div
+            class="client-single inactive position-4"
+            data-position="position-4"
+          >
+            <div style="color: gold" class="stars mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="client-img">
+              <img src="assets/avatar-03.png" alt="avatar" />
+            </div>
+            <div class="client-comment">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h3>
+              <span><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="client-info">
+              <h3>Rimy Nail</h3>
+              <p><a href="#">creative inc</a></p>
+            </div>
+          </div>
+          <div
+            class="client-single inactive position-5"
+            data-position="position-5"
+          >
+            <div style="color: gold" class="stars mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="client-img">
+              <img src="assets/avatar-04.png" alt="avatar" />
+            </div>
+            <div class="client-comment">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h3>
+              <span><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="client-info">
+              <h3>Rimy Nail</h3>
+              <p><a href="#">creative inc</a></p>
+            </div>
+          </div>
+          <div
+            class="client-single inactive position-6"
+            data-position="position-6"
+          >
+            <div style="color: gold" class="stars mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="client-img">
+              <img src="assets/avatar-05.png" alt="avatar" />
+            </div>
+            <div class="client-comment">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h3>
+              <span><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="client-info">
+              <h3>Rimy Nail</h3>
+              <p><a href="#">creative inc</a></p>
+            </div>
+          </div>
+          <div
+            class="client-single inactive position-7"
+            data-position="position-7"
+          >
+            <div style="color: gold" class="stars mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="client-img">
+              <img width="40px" src="assets/avatar-06.png" alt="avatar" />
+            </div>
+            <div class="client-comment">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h3>
+              <span><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="client-info">
+              <h3>Rimy Nail</h3>
+              <p><a href="#">creative inc</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mainColor flex justify-center items-center flex-col my-10 lg:-mt-32"
+      >
+        <div style="color: gold" class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <span>5.0/5.0</span>
+        </div>
+        <h5 class="font-bold">4000</h5>
+        <p style="color: #4591e9" class="font-bold uppercase">
+          Total Users Reviews
+        </p>
+      </div>
+    </section>
+    <!-- End Section Four -->
+    <!-- Start Section Five -->
+    <section class="secFive">
+      <div class="p-5 lg:px-[200px]">
+        <div
+          class="mainColor text-center capitalize flex flex-col space-y-3 md:space-x-0"
+        >
+          <span class="font-semibold">transparent</span>
+          <h3 class="font-bold text-4xl">Flexible Pricing</h3>
+          <p class="font-medium">
+            Choose the pricing plan that suits your needs
+          </p>
+        </div>
+        <div
+          class="tables mt-20 flex flex-col items-center space-y-2 md:flex-row md:space-x-2"
+        >
+          <div class="bg-white mainColor p-5 w-full md:w-1/2">
+            <div class="relative flex flex-col space-y-2">
+              <h4
+                class="bg-[#EAFAF4] text-[#7EE0BE] px-6 py-4 capitalize font-bold w-fit rounded-md"
+              >
+                basic plan
+              </h4>
+              <span class="text-4xl font-bold absolute right-0">$19/mo</span>
+              <p>perfect for occasional shipments</p>
+              <hr />
+            </div>
+            <div class="mt-2">
+              <h6 class="font-bold">includes:</h6>
+              <div class="flex justify-between flex-col md:flex-row mt-5">
+                <ul class="w-full flex flex-col space-y-2">
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                </ul>
+                <ul class="w-full flex flex-col space-y-2">
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button
+              class="text-white my-2 capitalize hover:mainColor w-full px-3 md:px-6 py-2 rounded-md bg-[#153A74] hover:bg-[#6FDCB6] duration-300"
+            >
+              get start
+            </button>
+          </div>
+          <div class="bg-white mainColor p-5 w-full md:w-1/2">
+            <div class="relative flex flex-col space-y-2">
+              <h4
+                class="bg-[#DBEAFB] text-[#3B8CEA] px-6 py-4 capitalize font-bold w-fit rounded-md"
+              >
+                business plan
+              </h4>
+              <span class="text-4xl font-bold absolute right-0">$29/mo</span>
+              <p>ideal for frequment shipments and business</p>
+              <hr />
+            </div>
+            <div class="mt-2">
+              <h6 class="font-bold">includes:</h6>
+              <div class="flex justify-between flex-col md:flex-row mt-5">
+                <ul class="w-full flex flex-col space-y-2">
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                </ul>
+                <ul class="w-full flex flex-col space-y-2">
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    <span>Lorem ipsum dolor Repudiandae</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button
+              class="text-white my-2 capitalize hover:mainColor w-full px-3 md:px-6 py-2 rounded-md bg-[#153A74] hover:bg-[#6FDCB6] duration-300"
+            >
+              get start
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Five -->
+    <!-- Start Section Sex -->
+    <section
+      style="background-image: url('./assets/Path\ 234.png')"
+      class="secSex bg-no-repeat bg-cover"
+    >
+      <div class="px-5">
+        <div
+          class="mainColor padding flex items-center flex-col-reverse md:flex-row"
+        >
+          <div class="w-full md:w-1/2 capitalize text-center md:text-start">
+            <h3 class="text-4xl font-bold mb-2">
+              Simplify Your Shipping Process Today
+            </h3>
+            <p class="font-medium mb-3">
+              Buraq offers a wide range of shipping services, including
+              container shipping, collection shipping, and one-time shipping.
+              Our team of experts will ensure your cargo is delivered safely and
+              on time.
+            </p>
+            <div
+              class="flex flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:space-x-2"
+            >
+              <button class="btn bg-[#153A74] px-5 py-2 capitalize w-full">
+                <a href="#">learn more</a>
+              </button>
+              <button
+                class="btn border border-[#153A74] text-[#153A74] hover:text-white hover:border-[#6FDCB6] px-5 py-2 capitalize w-full"
+              >
+                <a href="#">sign up</a>
+              </button>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:-mt-40">
+            <img
+              class="w-full h-full"
+              src="./assets/2021-01-19_(1_of_1).png"
+              alt="phone"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Sex -->
+    <!-- Start Section Seven -->
+    <section class="secSeven">
+      <div
+        class="relative font-inter antialiased min-h-screen flex flex-col justify-center overflow-hidden"
+      >
+        <main
+          class="relative min-h-screen flex flex-col justify-center overflow-hidden"
+        >
+          <div class="w-full max-w-2xl mx-auto px-4 md:px-6 py-24">
+            <div class="text-center mainColor capitalize">
+              <h2 class="font-bold mb-4 text-3xl">
+                <span class="text-[#6FDCB6] mx-3">FAQs</span>- Frequantly Asked
+                Questions
+              </h2>
+              <p>
+                find answers to common inquiries about our shipping services
+                container options and logistic managemant
+              </p>
+            </div>
+            <!-- Accordion component -->
+            <div class="divide-y divide-slate-200 mainColor">
+              <!-- Accordion item -->
+              <div x-data="{ expanded: true }" class="py-2">
+                <h2 class="text-[#6FDCB6]">
+                  <button
+                    id="faqs-title-01"
+                    type="button"
+                    class="flex items-center justify-between w-full text-left font-semibold py-2"
+                    @click="expanded = !expanded"
+                    :aria-expanded="expanded"
+                    aria-controls="faqs-text-01"
+                  >
+                    <span>What are your shipping services?</span>
+                    <svg
+                      class="fill-indigo-500 shrink-0 ml-8"
+                      width="16"
+                      height="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="7"
+                        width="16"
+                        height="2"
+                        rx="1"
+                        class="transform origin-center transition duration-200 ease-out"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                      <rect
+                        y="7"
+                        width="16"
+                        height="2"
+                        rx="1"
+                        class="transform origin-center rotate-90 transition duration-200 ease-out"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="faqs-text-01"
+                  role="region"
+                  aria-labelledby="faqs-title-01"
+                  class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                  :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                >
+                  <div class="overflow-hidden">
+                    <p class="pb-3">
+                      If you go over your organisations or user limit, a member
+                      of the team will reach out about bespoke pricing. In the
+                      meantime, our collaborative features won't appear in
+                      accounts or users that are over the 100-account or
+                      1,000-user limit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion item -->
+              <div x-data="{ expanded: false }" class="py-2">
+                <h2>
+                  <button
+                    id="faqs-title-02"
+                    type="button"
+                    class="flex items-center justify-between w-full text-left font-semibold py-2"
+                    @click="expanded = !expanded"
+                    :aria-expanded="expanded"
+                    aria-controls="faqs-text-02"
+                  >
+                    <span>what container options do you offer?</span>
+                    <svg
+                      class="fill-indigo-500 shrink-0 ml-8"
+                      width="16"
+                      height="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="7"
+                        width="16"
+                        height="2"
+                        rx="1"
+                        class="transform origin-center transition duration-200 ease-out"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                      <rect
+                        y="7"
+                        width="16"
+                        height="2"
+                        rx="1"
+                        class="transform origin-center rotate-90 transition duration-200 ease-out"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="faqs-text-02"
+                  role="region"
+                  aria-labelledby="faqs-title-02"
+                  class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                  :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                >
+                  <div class="overflow-hidden">
+                    <p class="pb-3">
+                      If you go over your organisations or user limit, a member
+                      of the team will reach out about bespoke pricing. In the
+                      meantime, our collaborative features won't appear in
+                      accounts or users that are over the 100-account or
+                      1,000-user limit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion item -->
+              <div x-data="{ expanded: false }" class="py-2">
+                <h2 class="">
+                  <button
+                    id="faqs-title-03"
+                    type="button"
+                    class="flex items-center justify-between w-full text-left font-semibold py-2"
+                    @click="expanded = !expanded"
+                    :aria-expanded="expanded"
+                    aria-controls="faqs-text-03"
+                  >
+                    <span>how do you mange logistics</span>
+                    <svg
+                      class="fill-indigo-500 shrink-0 ml-8"
+                      width="16"
+                      height="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="7"
+                        width="16"
+                        height="2"
+                        rx="1"
+                        class="transform origin-center transition duration-200 ease-out"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                      <rect
+                        y="7"
+                        width="16"
+                        height="2"
+                        rx="1"
+                        class="transform origin-center rotate-90 transition duration-200 ease-out"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="faqs-text-03"
+                  role="region"
+                  aria-labelledby="faqs-title-03"
+                  class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                  :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                >
+                  <div class="overflow-hidden">
+                    <p class="pb-3">
+                      If you go over your organisations or user limit, a member
+                      of the team will reach out about bespoke pricing. In the
+                      meantime, our collaborative features won't appear in
+                      accounts or users that are over the 100-account or
+                      1,000-user limit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion item -->
+              <div x-data="{ expanded: false }" class="py-2">
+                <h2>
+                  <button
+                    id="faqs-title-04"
+                    type="button"
+                    class="flex items-center justify-between w-full text-left font-semibold py-2"
+                    @click="expanded = !expanded"
+                    :aria-expanded="expanded"
+                    aria-controls="faqs-text-04"
+                  >
+                    <span>Do you offer tracking services?</span>
+                    <svg
+                      class="fill-indigo-500 shrink-0 ml-8"
+                      width="16"
+                      height="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="7"
+                        width="16"
+                        height="2"
+                        rx="1"
+                        class="transform origin-center transition duration-200 ease-out"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                      <rect
+                        y="7"
+                        width="16"
+                        height="2"
+                        rx="1"
+                        class="transform origin-center rotate-90 transition duration-200 ease-out"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="faqs-text-04"
+                  role="region"
+                  aria-labelledby="faqs-title-04"
+                  class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                  :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                >
+                  <div class="overflow-hidden">
+                    <p class="pb-3">
+                      If you go over your organisations or user limit, a member
+                      of the team will reach out about bespoke pricing. In the
+                      meantime, our collaborative features won't appear in
+                      accounts or users that are over the 100-account or
+                      1,000-user limit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion item -->
+              <div x-data="{ expanded: false }" class="py-2">
+                <h2>
+                  <button
+                    id="faqs-title-05"
+                    type="button"
+                    class="flex items-center justify-between w-full text-left font-semibold py-2"
+                    @click="expanded = !expanded"
+                    :aria-expanded="expanded"
+                    aria-controls="faqs-text-05"
+                  >
+                    <span>how can I contact you?</span>
+                    <svg
+                      class="fill-indigo-500 shrink-0 ml-8"
+                      width="16"
+                      height="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="7"
+                        width="16"
+                        height="2"
+                        rx="1"
+                        class="transform origin-center transition duration-200 ease-out"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                      <rect
+                        y="7"
+                        width="16"
+                        height="2"
+                        rx="1"
+                        class="transform origin-center rotate-90 transition duration-200 ease-out"
+                        :class="{'!rotate-180': expanded}"
+                      />
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="faqs-text-05"
+                  role="region"
+                  aria-labelledby="faqs-title-05"
+                  class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                  :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                >
+                  <div class="overflow-hidden">
+                    <p class="pb-3">
+                      If you go over your organisations or user limit, a member
+                      of the team will reach out about bespoke pricing. In the
+                      meantime, our collaborative features won't appear in
+                      accounts or users that are over the 100-account or
+                      1,000-user limit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End: Accordion component -->
+          </div>
+        </main>
+      </div>
+      <div class="padding py-10">
+        <div class="text-center mainColor capitalize">
+          <h6 class="font-bold">Experienced</h6>
+          <h2 class="text-4xl font-bold my-2">Meet Our Team</h2>
+          <p class="font-medium">
+            Our team of experts is committed to customer satisfaction.
+          </p>
+        </div>
+        <div class="cards mt-20 grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div
+            class="card flex flex-col items-center justify-center mainColor space-y-2 bg-transparent p-2 rounded-md hover:bg-white hover:shadow duration-300"
+          >
+            <img
+              src="./assets/avatar-01.png"
+              class="rounded-full h-28 w-28 object-cover"
+              alt="person"
+            />
+            <h4 class="text-2xl font-bold capitalize">steave joe</h4>
+            <span>co-founder </span>
+            <div class="social flex space-x-2 items-center">
+              <div><i class="fa-brands fa-facebook"></i></div>
+              <div><i class="fa-solid fa-x"></i></div>
+              <div><i class="fa-brands fa-twitch"></i></div>
+            </div>
+          </div>
+          <div
+            class="card flex flex-col items-center justify-center mainColor space-y-2 bg-transparent p-2 rounded-md hover:bg-white hover:shadow duration-300"
+          >
+            <img
+              src="./assets/avatar-02.png"
+              class="rounded-full h-28 w-28 object-cover"
+              alt="person"
+            />
+            <h4 class="text-2xl font-bold capitalize">steave joe</h4>
+            <span>co-founder </span>
+            <div class="social flex space-x-2 items-center">
+              <div><i class="fa-brands fa-facebook"></i></div>
+              <div><i class="fa-solid fa-x"></i></div>
+              <div><i class="fa-brands fa-twitch"></i></div>
+            </div>
+          </div>
+          <div
+            class="card flex flex-col items-center justify-center mainColor space-y-2 bg-transparent p-2 rounded-md hover:bg-white hover:shadow duration-300"
+          >
+            <img
+              src="./assets/avatar-03.png"
+              class="rounded-full h-28 w-28 object-cover"
+              alt="person"
+            />
+            <h4 class="text-2xl font-bold capitalize">steave joe</h4>
+            <span>co-founder </span>
+            <div class="social flex space-x-2 items-center">
+              <div><i class="fa-brands fa-facebook"></i></div>
+              <div><i class="fa-solid fa-x"></i></div>
+              <div><i class="fa-brands fa-twitch"></i></div>
+            </div>
+          </div>
+          <div
+            class="card flex flex-col items-center justify-center mainColor space-y-2 bg-transparent p-2 rounded-md hover:bg-white hover:shadow duration-300"
+          >
+            <img
+              src="./assets/avatar-04.png"
+              class="rounded-full h-28 w-28 object-cover"
+              alt="person"
+            />
+            <h4 class="text-2xl font-bold capitalize">steave joe</h4>
+            <span>co-founder </span>
+            <div class="social flex space-x-2 items-center">
+              <div><i class="fa-brands fa-facebook"></i></div>
+              <div><i class="fa-solid fa-x"></i></div>
+              <div><i class="fa-brands fa-twitch"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center py-10 capitalize underline text-[#A1E5CE]">
+          <a class="font-medium" href="#">all teams</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Seven -->
+    <!-- Start footer -->
+    <footer class="w-full">
+      <div
+        class="mainColor padding py-0 flex items-center flex-col-reverse md:flex-row"
+      >
+        <div class="w-full md:w-1/2 capitalize text-center md:text-start">
+          <h3 class="text-4xl font-bold mb-2">We’re hiring!</h3>
+          <p class="font-medium mb-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <button
+            class="btn border border-[#153A74] text-[#153A74] hover:text-white hover:border-[#6FDCB6] px-5 py-2 capitalize w-fit"
+          >
+            <a href="#">open position</a>
+          </button>
+        </div>
+        <div class="w-full md:w-1/2 -z-10 md:-mb-28">
+          <img class="w-full h-full" src="./assets/02.png" alt="person" />
+        </div>
+      </div>
+      <div
+        style="
+          background-image: url('./assets/container-yard-business-import-export.png');
+        "
+        class="relative max-w-[1100px] h-full bg-cover bg-no-repeat mx-auto text-white"
+      >
+        <div
+          style="background-image: url('./assets/Rectangle\ 695.png')"
+          class="absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat"
+        ></div>
+        <div class="flex flex-col space-y-5 capitalize py-10 text-center">
+          <h3 class="md:text-5xl font-bold z-30">
+            Stay Updated with International Shipping
+          </h3>
+          <p class="text-sm z-30">
+            Subscribe to Buraq's newsletter for the latest shipping and
+            logistics news.
+          </p>
+          <form
+            class="flex flex-col space-y-2 md:flex-row md:space-y-0 items-center justify-center space-x-2 z-30"
+          >
+            <input
+              type="text"
+              placeholder="your email here"
+              class="w-full sm:w-96 py-3 px-3 rounded-md"
+            />
+            <button class="btn bg-[#153A74] px-7 py-3 capitalize">
+              get updates
+            </button>
+          </form>
+          <p class="text-sm z-30">
+            By subscribing, you agree to our Privacy Policy and consent to
+            receive updates from our company.
+          </p>
+        </div>
+      </div>
+      <div
+        class="last bg-[#153A74] md:-mt-16 text-white p-10 text-center md:text-start md:py-24 md:px-36 -z-10 grid grid-cols-2 md:grid-cols-4 gap-10"
+      >
+        <div class="flex flex-col space-y-5">
+          <img src="./assets/Group 1418.png" alt="logo" />
+          <p>
+            Stay up to date on the latest features and releases by joining our
+            newsletter.
+          </p>
+        </div>
+        <div>
+          <h3 class="mb-2 capitalize">COLUMN ONE</h3>
+          <ul class="flex flex-col space-y-2">
+            <li><a href="#">link1</a></li>
+            <li><a href="#">link2</a></li>
+            <li><a href="#">link3</a></li>
+            <li><a href="#">link4</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-2 capitalize">COLUMN two</h3>
+          <ul class="flex flex-col space-y-2">
+            <li><a href="#">link1</a></li>
+            <li><a href="#">link2</a></li>
+            <li><a href="#">link3</a></li>
+            <li><a href="#">link4</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-2 capitalize">FOLLOW US</h3>
+          <ul class="flex flex-col space-y-2">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook mr-2"></i>facebook</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-instagram mr-2"></i>instagram</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-x mr-2"></i>x</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin mr-2"></i>linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+    <!-- scripts -->
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
