@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Services</title>
+  </head>
+
+  <body>
+    <!-- Start first header and hero  -->
+    <div class="relative">
+      <div
+        style="background-image: url('./assets/Path\ 187.png')"
+        class="bg-no-repeat h-[700px] absolute left-0 right-0 top-0 bottom-0 -z-10 bg-cover"
+      ></div>
+      <!-- Start header -->
+      <header class="w-full">
+        <nav class="px-4 lg:px-6 py-2.5 mainColor">
+          <div
+            class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+          >
+            <a href="#" class="flex items-center">
+              <img
+                src="./assets/Buraq-logo 1.png"
+                class="mr-3 h-6 sm:h-9"
+                alt="Logo"
+              />
+            </a>
+            <div class="flex items-center lg:order-2 lg:space-x-5">
+              <a href="#" class="btn bg-[#153A74] px-7">Log in</a>
+              <a
+                href="#"
+                class="btn border border-[#153A74] text-[#153A74] hover:text-white hover:border-[#6FDCB6]"
+                >sign up</a
+              >
+              <button
+                data-collapse-toggle="mobile-menu-2"
+                type="button"
+                class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="mobile-menu-2"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <svg
+                  class="hidden w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+              id="mobile-menu-2"
+            >
+              <ul
+                class="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0 font-bold capitalize"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 pr-4 pl-3 hover:text-white"
+                    aria-current="page"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block py-2 pr-4 pl-3 hover:text-white"
+                    >Shipping services</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block py-2 pr-4 pl-3 hover:text-white"
+                    >track order</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block py-2 pr-4 pl-3 hover:text-white"
+                    >contact us</a
+                  >
+                </li>
+                <li>
+                  <div class="dropdown inline-block relative">
+                    <button
+                      class="text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center"
+                    >
+                      <span class="mr-1">More Options</span>
+                      <svg
+                        class="fill-current h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        />
+                      </svg>
+                    </button>
+                    <ul
+                      class="dropdown-menu absolute hidden text-gray-700 pt-1 w-full"
+                    >
+                      <li>
+                        <a
+                          class="rounded-t py-2 px-4 block whitespace-no-wrap"
+                          href="#"
+                          >One</a
+                        >
+                      </li>
+                      <li>
+                        <a class="py-2 px-4 block whitespace-no-wrap" href="#"
+                          >Two</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- End header header -->
+      <!-- Start hero section -->
+      <div class="service padding">
+        <div class="mainColor font-bold text-center flex flex-col space-y-5">
+          <span>Services</span>
+          <h3 class="text-3xl md:text-5xl">Expert International Shipping</h3>
+          <p>
+            Experience hassle-free international cargo and shared container
+            shipping with Buraq.
+          </p>
+        </div>
+      </div>
+      <!-- End hero section -->
+    </div>
+    <!-- End first header and hero  -->
+    <!-- Start Section Two -->
+    <section class="secTwo relative">
+      <div class="mainColor padding flex items-center flex-col">
+        <div class="flex items-center flex-col md:flex-row">
+          <div class="w-full md:w-1/2">
+            <img class="w-full h-full" src="./assets/2389.png" alt="phones" />
+          </div>
+          <div
+            id="myDiv"
+            class="cards w-full h-96 overflow-auto md:w-1/2 capitalize text-center md:text-start"
+          >
+            <div class="card w-full capitalize text-center md:text-start">
+              <div class="py-6 relative">
+                <img src="./assets/Group 1338.png" alt="icon" />
+                <h3 class="title mb-2">
+                  Medium length section <br />
+                  heading goes here
+                </h3>
+                <img
+                  class="absolute right-0 top-20 lg:right-2 lg:top-16"
+                  src="./assets/Group 1330.png"
+                  alt="icon"
+                />
+              </div>
+              <p class="font-medium mb-3">
+                At Buraq, we offer a range of container shipping services to
+                meet your international cargo needs. Whether you're shipping
+                small packages or large shipments, we have the right container
+                options for you.
+              </p>
+              <div
+                class="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-2"
+              >
+                <div class="bg-white w-full md:w-1/2 px-3 py-4">
+                  <i class="fa-solid fa-cube text-[#0E72E5] text-3xl"></i>
+                  <h5 class="mainColor font-bold mb-2">Subheading one</h5>
+                  <p>
+                    Enjoy the convenience of our One Time Shipping services,
+                    tailored to your specific needs.
+                  </p>
+                </div>
+                <div class="bg-white w-full md:w-1/2 px-3 py-4">
+                  <i class="fa-solid fa-cube text-[#0E72E5] text-3xl"></i>
+                  <h5 class="mainColor font-bold mb-2">Subheading two</h5>
+                  <p>
+                    Experience efficient and reliable shipping with our One Time
+                    Shipping services.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card w-full capitalize text-center md:text-start">
+              <div class="py-6 relative">
+                <img src="./assets/Group 1338.png" alt="icon" />
+                <h3 class="title text-[#0E72E5] mb-2">
+                  Simplify Your Shipping Process <br />
+                  with shared container shipping
+                </h3>
+                <img
+                  class="absolute right-0 top-20 lg:right-2 lg:top-16"
+                  src="./assets/Group 1330.png"
+                  alt="icon"
+                />
+              </div>
+              <p class="font-medium mb-3">
+                At Buraq, we offer a range of container shipping services to
+                meet your international cargo needs. Whether you're shipping
+                small packages or large shipments, we have the right container
+                options for you.
+              </p>
+              <div
+                class="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-2"
+              >
+                <div class="bg-white w-full md:w-1/2 px-3 py-4">
+                  <i class="fa-solid fa-cube text-[#0E72E5] text-3xl"></i>
+                  <h5 class="mainColor font-bold mb-2">benefits</h5>
+                  <p>
+                    Enjoy the convenience of our One Time Shipping services,
+                    tailored to your specific needs.
+                  </p>
+                </div>
+                <div class="bg-white w-full md:w-1/2 px-3 py-4">
+                  <i class="fa-solid fa-cube text-[#0E72E5] text-3xl"></i>
+                  <h5 class="mainColor font-bold mb-2">features</h5>
+                  <p>
+                    Experience efficient and reliable shipping with our One Time
+                    Shipping services.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card w-full capitalize text-center md:text-start">
+              <div class="py-6 relative">
+                <img src="./assets/Group 1338.png" alt="icon" />
+                <h3 class="title mb-2">
+                  Experience hassle-free international cargo and shared
+                  container shipping with Buraq.
+                </h3>
+                <img
+                  class="absolute right-0 top-20 lg:right-2 lg:top-16"
+                  src="./assets/Group 1330.png"
+                  alt="icon"
+                />
+              </div>
+              <p class="font-medium mb-3">
+                Easily monitor the progress of your international shipments with
+                Buraq's tracking system. Save Money with Shared Container
+                Shipping Share container space with other customers to reduce
+                shipping costs with Buraq's shared container shipping service.
+              </p>
+              <div class="flex flex-col space-y-5 mt-3">
+                <div class="flex items-center space-x-2">
+                  <i class="fa-solid fa-cube text-[#0E72E5] text-2xl"></i>
+                  <span
+                    >real-time updates on your shipments location and estimeted
+                    delivery</span
+                  >
+                </div>
+                <div class="flex items-center space-x-2">
+                  <i class="fa-solid fa-cube text-[#0E72E5] text-2xl"></i>
+                  <span
+                    >real-time updates on your shipments location and estimeted
+                    delivery</span
+                  >
+                </div>
+                <div class="flex items-center space-x-2">
+                  <i class="fa-solid fa-cube text-[#0E72E5] text-2xl"></i>
+                  <span
+                    >real-time updates on your shipments location and estimeted
+                    delivery</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card w-full capitalize text-center md:text-start">
+              <div class="py-6 relative">
+                <img src="./assets/Group 1338.png" alt="icon" />
+                <h3 class="title text-[#0E72E5] mb-2">
+                  choose buraq for reliable and fast shipping
+                </h3>
+                <img
+                  class="absolute right-0 top-20 lg:right-2 lg:top-16"
+                  src="./assets/Group 1330.png"
+                  alt="icon"
+                />
+              </div>
+              <p class="font-medium mb-3">
+                Easily monitor the progress of your international shipments with
+                Buraq's tracking system.
+              </p>
+              <div
+                class="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-2"
+              >
+                <div class="bg-white w-full md:w-1/2 px-3 py-4">
+                  <i class="fa-solid fa-cube text-[#0E72E5] text-3xl"></i>
+                  <h5 class="mainColor font-bold mb-2">cost-efficient</h5>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ratione, temporibus.
+                  </p>
+                </div>
+                <div class="bg-white w-full md:w-1/2 px-3 py-4">
+                  <i class="fa-solid fa-cube text-[#0E72E5] text-3xl"></i>
+                  <h5 class="mainColor font-bold mb-2">reliable</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias, saepe.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ////////////////////////// -->
+        <div
+          class="btns flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2"
+        >
+          <button
+            class="btn border bg-[#6FDCB6] text-white px-5 py-2 capitalize"
+          >
+            <a href="#">learn more</a>
+          </button>
+          <button
+            class="btn border border-[#6FDCB6] text-[#153A74] hover:text-white hover:border-[#6FDCB6] px-7 py-2 capitalize"
+          >
+            <a href="#">sign up</a>
+          </button>
+        </div>
+        <!-- ////////////////////////////// -->
+
+        <div class="absolute -right-40 top-10">
+          <img
+            class="w-full h-full object-cover rounded-full -z-20"
+            src="./assets/Ellipse 9.png"
+            alt="light"
+          />
+        </div>
+        <div class="absolute left-0 top-10">
+          <img
+            class="w-full h-full object-cover rounded-full -z-20"
+            src="./assets/Ellipse 10.png"
+            alt="light"
+          />
+        </div>
+      </div>
+      <div class="px-5 py-0 lg:px-[200px] flex flex-col">
+        <div class="mainColor flex items-center flex-col md:flex-row">
+          <div class="absolute left-0">
+            <img
+              class="w-full h-full object-cover rounded-full -z-20"
+              src="./assets/Ellipse 8.png"
+              alt="light"
+            />
+          </div>
+          <div
+            class="cards w-full md:w-1/2 capitalize text-center md:text-start"
+          >
+            <div class="card w-full capitalize text-center md:text-start">
+              <div class="py-6 relative">
+                <img src="./assets/Group 1338.png" alt="icon" />
+                <h3 class="title mb-2">
+                  Get Started with Buraq's Shipping Services
+                </h3>
+                <img
+                  class="absolute right-0 top-32 lg:right-2 lg:top-16"
+                  src="./assets/Group 1330.png"
+                  alt="icon"
+                />
+              </div>
+              <p class="font-medium mb-3">
+                Follow these simple steps to begin using Buraq's international
+                shipping services.
+              </p>
+            </div>
+            <div class="card w-full capitalize text-center md:text-start">
+              <div class="py-6 relative">
+                <img src="./assets/Group 1338.png" alt="icon" />
+                <h3 class="title text-[#1978E6] mb-2">
+                  Track Your Cargo Anywhere in the World
+                </h3>
+                <img
+                  class="absolute right-0 top-32 lg:right-2 lg:top-16"
+                  src="./assets/Group 1330.png"
+                  alt="icon"
+                />
+              </div>
+              <p class="font-medium mb-3">
+                Easily monitor the progress of your international shipments with
+                Buraq's tracking system.
+              </p>
+            </div>
+            <div class="card w-full capitalize text-center md:text-start">
+              <div class="py-6 relative">
+                <img src="./assets/Group 1338.png" alt="icon" />
+                <h3 class="title mb-2">
+                  Save Money with Shared Container Shipping
+                </h3>
+                <img
+                  class="absolute right-0 top-32 lg:right-2 lg:top-16"
+                  src="./assets/Group 1330.png"
+                  alt="icon"
+                />
+              </div>
+              <p class="font-medium mb-3">
+                Share container space with other customers to reduce shipping
+                costs with Buraq's shared container shipping service.
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2">
+            <img class="w-full h-full" src="./assets/84547.png" alt="phone" />
+          </div>
+        </div>
+        <!-- ////////////////////////// -->
+        <div
+          class="btns mx-auto flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2"
+        >
+          <button
+            class="btn border bg-[#6FDCB6] text-white px-5 py-2 capitalize"
+          >
+            <a href="#">learn more</a>
+          </button>
+          <button
+            class="btn border border-[#6FDCB6] text-[#153A74] hover:text-white hover:border-[#6FDCB6] px-7 py-2 capitalize"
+          >
+            <a href="#">sign up</a>
+          </button>
+        </div>
+        <!-- ////////////////////////////// -->
+      </div>
+    </section>
+    <!-- End Section Two -->
+    <!-- Start Section Three -->
+    <section class="secThree p-5 lg:px-[200px]">
+      <div
+        style="background-image: url('./assets/Group\ 1571.png')"
+        class="w-full bg-cover relative text-white h-full py-20 overflow-hidden rounded-2xl text-center flex flex-col space-y-5"
+      >
+        <h2 class="title z-10">Simplify Your Shipping Process Today</h2>
+        <p class="z-10">
+          Buraq is your trusted partner for all your international shipping
+          needs.
+        </p>
+        <div
+          class="btns mx-auto z-10 flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2"
+        >
+          <button
+            class="btn border bg-white text-[#153A74] font-bold px-5 py-2 capitalize"
+          >
+            <a href="#">learn more</a>
+          </button>
+          <button
+            class="btn border border-[#6FDCB6] font-bold text-[#153A74] hover:text-white hover:border-[#6FDCB6] px-7 py-2 capitalize"
+          >
+            <a href="#">sign up</a>
+          </button>
+        </div>
+        <div
+          class="w-full h-full bg-[#2378B8] absolute left-0 -top-5 opacity-60 bg-no-repeat bg-cover"
+        ></div>
+      </div>
+    </section>
+    <!-- End Section Three -->
+
+    <!-- Start Section Four -->
+    <section id="testimonial-area" class="padding relative">
+      <div class="absolute left-0 top-10">
+        <img
+          class="w-full h-full object-cover rounded-full shadow -z-20"
+          src="./assets/Ellipse 10.png"
+          alt="light"
+        />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div style="color: #153a74" class="section-heading text-center">
+              <h2 class="fw-bold">Happy Customers</h2>
+              <p>Read what our customers have to say about our services</p>
+              <div style="color: gold" class="stars my-4">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-wrap">
+          <div
+            class="client-single active position-1"
+            data-position="position-1"
+          >
+            <div class="client-comment">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h3>
+              <span><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="client-img">
+              <img src="assets/avatar-01.png" alt="avatar" />
+            </div>
+            <div class="client-info">
+              <h3>Rimy Nail</h3>
+              <p><a href="#">creative inc</a></p>
+            </div>
+          </div>
+          <div
+            class="client-single inactive position-2"
+            data-position="position-2"
+          >
+            <div class="client-comment">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h3>
+              <span><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="client-img">
+              <img src="assets/avatar-02.png" alt="avatar" />
+            </div>
+            <div class="client-info">
+              <h3>Rimy Nail</h3>
+              <p><a href="#">creative inc</a></p>
+            </div>
+          </div>
+          <div
+            class="client-single inactive position-3"
+            data-position="position-3"
+          >
+            <div class="client-comment">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h3>
+              <span><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="client-img">
+              <img src="assets/avatar-01.png" alt="avatar" />
+            </div>
+            <div class="client-info">
+              <h3>Rimy Nail</h3>
+              <p><a href="#">creative inc</a></p>
+            </div>
+          </div>
+          <div
+            class="client-single inactive position-4"
+            data-position="position-4"
+          >
+            <div class="client-comment">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h3>
+              <span><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="client-img">
+              <img src="assets/avatar-03.png" alt="avatar" />
+            </div>
+            <div class="client-info">
+              <h3>Rimy Nail</h3>
+              <p><a href="#">creative inc</a></p>
+            </div>
+          </div>
+          <div
+            class="client-single inactive position-5"
+            data-position="position-5"
+          >
+            <div class="client-comment">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h3>
+              <span><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="client-img">
+              <img src="assets/avatar-04.png" alt="avatar" />
+            </div>
+            <div class="client-info">
+              <h3>Rimy Nail</h3>
+              <p><a href="#">creative inc</a></p>
+            </div>
+          </div>
+          <div
+            class="client-single inactive position-6"
+            data-position="position-6"
+          >
+            <div class="client-comment">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h3>
+              <span><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="client-img">
+              <img src="assets/avatar-05.png" alt="avatar" />
+            </div>
+            <div class="client-info">
+              <h3>Rimy Nail</h3>
+              <p><a href="#">creative inc</a></p>
+            </div>
+          </div>
+          <div
+            class="client-single inactive position-7"
+            data-position="position-7"
+          >
+            <div class="client-comment">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </h3>
+              <span><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="client-img">
+              <img width="40px" src="assets/avatar-06.png" alt="avatar" />
+            </div>
+            <div class="client-info">
+              <h3>Rimy Nail</h3>
+              <p><a href="#">creative inc</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mainColor flex justify-center items-center flex-col my-10 lg:-mt-32"
+      >
+        <div style="color: gold" class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <span>5.0/5.0</span>
+        </div>
+        <h5 class="font-bold text-5xl">4000</h5>
+        <p style="color: #4591e9" class="font-bold uppercase">
+          Total Users Reviews
+        </p>
+      </div>
+      <div class="absolute -right-40 top-10">
+        <img
+          class="w-full h-full object-cover rounded-full shadow -z-20"
+          src="./assets/Ellipse 9.png"
+          alt="light"
+        />
+      </div>
+    </section>
+    <!-- End Section Four -->
+
+    <!-- Start footer -->
+    <footer class="w-full">
+      <div
+        class="mainColor padding py-0 flex items-center flex-col-reverse md:flex-row"
+      >
+        <div class="w-full md:w-1/2 capitalize text-center md:text-start">
+          <h3 class="text-4xl font-bold mb-2">We’re hiring!</h3>
+          <p class="font-medium mb-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <button
+            class="btn border border-[#153A74] text-[#153A74] hover:text-white hover:border-[#6FDCB6] px-5 py-2 capitalize w-fit"
+          >
+            <a href="#">open position</a>
+          </button>
+        </div>
+        <div class="w-full md:w-1/2 -z-10 md:-mb-36">
+          <img class="w-full h-full" src="./assets/02.png" alt="person" />
+        </div>
+      </div>
+      <div
+        style="
+          background-image: url('./assets/container-yard-business-import-export.png');
+        "
+        class="relative max-w-[1100px] h-full bg-cover bg-no-repeat mx-auto text-white"
+      >
+        <div
+          style="background-image: url('./assets/Rectangle\ 695.png')"
+          class="absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat"
+        ></div>
+        <div class="flex flex-col space-y-5 capitalize py-10 text-center">
+          <h3 class="md:text-5xl font-bold z-30">
+            Stay Updated with International Shipping
+          </h3>
+          <p class="text-sm z-30">
+            Subscribe to Buraq's newsletter for the latest shipping and
+            logistics news.
+          </p>
+          <form
+            class="flex flex-col space-y-2 md:flex-row md:space-y-0 items-center justify-center space-x-2 z-30"
+          >
+            <input
+              type="text"
+              placeholder="your email here"
+              class="w-full sm:w-96 py-3 px-3 rounded-md"
+            />
+            <button class="btn bg-[#153A74] px-7 py-3 capitalize">
+              get updates
+            </button>
+          </form>
+          <p class="text-sm z-30">
+            By subscribing, you agree to our Privacy Policy and consent to
+            receive updates from our company.
+          </p>
+        </div>
+      </div>
+      <div
+        class="last bg-[#153A74] md:-mt-16 text-white p-10 text-center md:text-start md:py-24 md:px-36 -z-10 grid grid-cols-2 md:grid-cols-4 gap-10"
+      >
+        <div class="flex flex-col space-y-5">
+          <img src="./assets/Group 1418.png" alt="logo" />
+          <p>
+            Stay up to date on the latest features and releases by joining our
+            newsletter.
+          </p>
+        </div>
+        <div>
+          <h3 class="mb-2 capitalize">COLUMN ONE</h3>
+          <ul class="flex flex-col space-y-2">
+            <li><a href="#">link1</a></li>
+            <li><a href="#">link2</a></li>
+            <li><a href="#">link3</a></li>
+            <li><a href="#">link4</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-2 capitalize">COLUMN two</h3>
+          <ul class="flex flex-col space-y-2">
+            <li><a href="#">link1</a></li>
+            <li><a href="#">link2</a></li>
+            <li><a href="#">link3</a></li>
+            <li><a href="#">link4</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-2 capitalize">FOLLOW US</h3>
+          <ul class="flex flex-col space-y-2">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook mr-2"></i>facebook</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-instagram mr-2"></i>instagram</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-x mr-2"></i>x</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin mr-2"></i>linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+    <!-- scripts -->
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
