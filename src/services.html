@@ -12,6 +12,11 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js"
       defer
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+   <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <title>Services</title>
@@ -22,7 +27,7 @@
     <div class="relative">
       <div
         style="background-image: url('./assets/Path\ 187.png')"
-        class="bg-no-repeat h-[700px] absolute left-0 right-0 top-0 bottom-0 -z-10 bg-cover"
+        class="bg-no-repeat h-[700px] bg-contain absolute left-0 right-0 top-0 bottom-0 -z-10"
       ></div>
       <!-- Start header -->
       <header class="w-full">
@@ -487,7 +492,7 @@
     <!-- End Section Three -->
 
     <!-- Start Section Four -->
-    <section id="testimonial-area" class="padding relative">
+    <section id="testimonial-area" class="padding relative z-20">
       <div class="absolute left-0 top-10">
         <img
           class="w-full h-full object-cover rounded-full shadow -z-20"
@@ -718,7 +723,7 @@
           class="absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat"
         ></div>
         <div class="flex flex-col space-y-5 capitalize py-10 text-center">
-          <h3 class="md:text-5xl font-bold z-30">
+          <h3 class="text-4xl z-30">
             Stay Updated with International Shipping
           </h3>
           <p class="text-sm z-30">
@@ -795,6 +800,8 @@
     <!-- End footer -->
     <!-- scripts -->
     <script src="js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -907,6 +907,30 @@ video {
   height: 100%;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[550px\] {
+  height: 550px;
+}
+
+.h-\[0px\] {
+  height: 0px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
+.h-\[650px\] {
+  height: 650px;
+}
+
+.h-\[70px\] {
+  height: 70px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
