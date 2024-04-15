@@ -1379,6 +1379,10 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -1389,18 +1393,6 @@ video {
 
 .pt-1 {
   padding-top: 0.25rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
-}
-
-.pb-32 {
-  padding-bottom: 8rem;
 }
 
 .text-left {
@@ -2099,11 +2091,6 @@ section {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:text-\[\#153A74\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(21 58 116 / var(--tw-text-opacity));
-}
-
 .hover\:shadow:hover {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -2204,8 +2191,8 @@ section {
     margin-top: -4rem;
   }
 
-  .md\:-mt-\[155px\] {
-    margin-top: -155px;
+  .md\:-mt-\[144px\] {
+    margin-top: -144px;
   }
 
   .md\:-mt-\[370px\] {
@@ -2214,14 +2201,6 @@ section {
 
   .md\:mb-52 {
     margin-bottom: 13rem;
-  }
-
-  .md\:-mt-\[140px\] {
-    margin-top: -140px;
-  }
-
-  .md\:-mt-\[144px\] {
-    margin-top: -144px;
   }
 
   .md\:block {
