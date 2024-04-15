@@ -1365,11 +1365,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-56 {
-  padding-top: 14rem;
-  padding-bottom: 14rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1396,8 +1391,16 @@ video {
   padding-top: 0.25rem;
 }
 
-.pt-56 {
-  padding-top: 14rem;
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
 }
 
 .text-left {
@@ -2096,6 +2099,11 @@ section {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-\[\#153A74\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(21 58 116 / var(--tw-text-opacity));
+}
+
 .hover\:shadow:hover {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -2208,6 +2216,14 @@ section {
     margin-bottom: 13rem;
   }
 
+  .md\:-mt-\[140px\] {
+    margin-top: -140px;
+  }
+
+  .md\:-mt-\[144px\] {
+    margin-top: -144px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2305,11 +2321,6 @@ section {
   .md\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
-  }
-
-  .md\:py-56 {
-    padding-top: 14rem;
-    padding-bottom: 14rem;
   }
 
   .md\:pt-56 {
