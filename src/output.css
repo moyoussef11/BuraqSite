@@ -1423,6 +1423,10 @@ video {
   padding-top: 0.25rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2337,6 +2341,10 @@ section {
 
   .md\:pt-56 {
     padding-top: 14rem;
+  }
+
+  .md\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .md\:text-start {
