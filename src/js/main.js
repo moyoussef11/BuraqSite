@@ -49,11 +49,17 @@ $(document).ready(
 );
 // swiper
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: "auto", // يستخدم عدد الشرائح حسب حجم الشاشة
   spaceBetween: 30,
   freeMode: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      freeMode: false, 
+    },
   },
 });
