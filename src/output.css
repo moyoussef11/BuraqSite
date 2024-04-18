@@ -968,6 +968,14 @@ video {
   margin-top: 7rem;
 }
 
+.-mt-64 {
+  margin-top: -16rem;
+}
+
+.-mt-52 {
+  margin-top: -13rem;
+}
+
 .block {
   display: block;
 }
@@ -1508,6 +1516,10 @@ video {
 
 .pt-1 {
   padding-top: 0.25rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .text-left {
@@ -2525,6 +2537,10 @@ section {
 
   .lg\:-mt-28 {
     margin-top: -7rem;
+  }
+
+  .lg\:-mt-52 {
+    margin-top: -13rem;
   }
 
   .lg\:flex {
